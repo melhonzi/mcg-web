@@ -1,0 +1,14 @@
+# Vista previa interna de MCG Estudio Contable & Consultora.
+# Este sitio TODAVIA NO debe indexarse: es una vista previa de revisión.
+#
+# Para habilitar la indexación al publicar el sitio definitivo:
+# 1) Cambiar las líneas de abajo por: Allow: /
+# 2) Quitar (o cambiar a "index, follow") la etiqueta
+#    <meta name="robots" content="noindex, nofollow"> de cada página HTML.
+# 3) Confirmar el dominio definitivo y actualizar el Sitemap y los
+#    canonical de cada página con ese dominio.
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://mcgconsultora.com.py/sitemap.xml
