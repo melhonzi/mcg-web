@@ -396,7 +396,7 @@ fieldset{ border:none; padding:0; margin:0 0 18px 0; }
 .hero-marca-escena{
   position:absolute; top:0; right:0; bottom:0; width:58%;
   background-image:url('img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.jpg');
-  background-size:cover; background-position:center left; background-repeat:no-repeat;
+  background-size:cover; background-position:center center; background-repeat:no-repeat;
 }
 .hero-marca-escena::after{
   content:""; position:absolute; inset:0;
