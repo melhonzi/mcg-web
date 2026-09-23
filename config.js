@@ -24,8 +24,8 @@ window.MCG_CONFIG = {
     "waMensajeFlotante": "Hola MCG, vengo de la página web y quiero hacer una consulta"
   },
   "dominio": {
-    "preferido": "mcgconsultora.com.py",
-    "urlCanonicaBase": "https://mcgconsultora.com.py"
+    "preferido": "www.mcgconsultora.com.py",
+    "urlCanonicaBase": "https://www.mcgconsultora.com.py"
   }
 };
 

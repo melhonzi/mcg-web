@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mcgconsultora.com.py/sitemap.xml
+Sitemap: https://www.mcgconsultora.com.py/sitemap.xml

@@ -222,8 +222,7 @@ P["contabilidad"] = {
     "nav_footer": "Contabilidade empresarial",
     "service": "Contabilidade empresarial",
     "title": "Contabilidade no Paraguai | Serviço contábil mensal — MCG",
-    "description": ("Contabilidade no Paraguai para empresas: registros contábeis, IVA e IRE perante a DNIT, fechamentos "
-                    "e relatórios para a direção. Escritório de contabilidade em Assunção."),
+    "description": ("Contabilidade no Paraguai para empresas: registros contábeis, IVA e IRE perante a DNIT, fechamentos e relatórios. Escritório em Assunção."),
     "h1": "Contabilidade empresarial no Paraguai, feita para decidir",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Contabilidade empresarial",
@@ -334,8 +333,7 @@ P["tributaria"] = {
     "nav_footer": "Estratégia tributária",
     "service": "Estratégia e planejamento tributário",
     "title": "Impostos no Paraguai | Estratégia tributária e DNIT — MCG",
-    "description": ("Diagnóstico tributário, contingências e plano de ação para empresas no Paraguai. Planejamento de IRE, "
-                    "IVA e IDU perante a DNIT com critério preventivo. MCG, Assunção."),
+    "description": ("Diagnóstico tributário, contingências e plano de ação para empresas no Paraguai. Planejamento de IRE, IVA e IDU perante a DNIT. MCG, Assunção."),
     "h1": "Estratégia tributária e prevenção de riscos no Paraguai",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Estratégia tributária",
@@ -689,7 +687,7 @@ P["faq"] = {
     "slug": "perguntas-frequentes-impostos-paraguai.html",
     "nav": "Perguntas frequentes",
     "nav_footer": "Perguntas frequentes",
-    "title": "Impostos no Paraguai para brasileiros | Perguntas frequentes — MCG",
+    "title": "Impostos no Paraguai para brasileiros | Perguntas | MCG",
     "description": ("DNIT, IRE, IVA, IRP, IDU, nota fiscal eletrônica, residência por investimento, cédula paraguaia e "
                     "abertura de empresa no Paraguai: 28 respostas detalhadas da MCG."),
     "h1": "Perguntas frequentes sobre impostos e empresas no Paraguai",

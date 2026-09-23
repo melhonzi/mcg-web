@@ -1,4 +1,145 @@
 /* ============================================================
+   Tipografías alojadas en el propio sitio
+   ------------------------------------------------------------
+   Cormorant Garamond e Inter, bajadas de Google Fonts (licencia
+   SIL Open Font License 1.1, que permite alojarlas).
+   Antes se pedían a fonts.googleapis.com con un <link> que FRENA
+   el dibujado: el navegador no pinta una sola letra hasta que ese
+   pedido a otro servidor termina. Acá viajan con el sitio, en la
+   misma conexión que ya está abierta.
+   El unicode-range hace que el navegador baje solo lo que usa:
+   para español, inglés y portugués alcanza con el juego "latin".
+   ============================================================ */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/cormorant-garamond-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/inter-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/inter-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ============================================================
    MCG Consultora Contable y Tributaria — Sistema de diseño
    Paleta real de marca: azul marino profundo + dorado/bronce
    discreto + marfil cálido + grafito. Tomada del logo oficial
@@ -391,11 +532,26 @@ fieldset{ border:none; padding:0; margin:0 0 18px 0; }
   position:relative; overflow:hidden; color:var(--blanco);
   background-color:#001D45;
   min-height:600px; display:flex; align-items:center;
-  padding:54px 0;
+  padding:44px 0;
 }
+/* La foto se recorta sola para llenar el espacio (background-size:cover), así
+   que cuanto más alto y angosto sea ese espacio, más se agranda la foto y más
+   se le come de los costados. Con 58% fijo, en una pantalla de 1366 o 1512 se
+   perdían entre 200 y 280 px de ancho: se cortaba el cartel de MCG y las
+   palabras de la derecha. El clamp le da el ancho mínimo que necesita para
+   que entre entera, sin pasarse del 70% (más que eso tapa el texto). */
 .hero-marca-escena{
-  position:absolute; top:0; right:0; bottom:0; width:58%;
+  position:absolute; top:0; right:0; bottom:0;
+  width:clamp(58%, 1000px, 70%);
+  /* Dos formatos de la misma foto: la primera línea es la de siempre (JPG,
+     108 KB) y sirve de respaldo; la segunda la reemplaza por la versión WebP
+     (53 KB, la mitad) en los navegadores que la entienden, que hoy son casi
+     todos. Un navegador viejo no entiende la segunda línea, la descarta
+     entera y se queda con el JPG: nunca se queda sin foto. */
   background-image:url('img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.jpg');
+  background-image:image-set(
+    url('img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.webp') type('image/webp'),
+    url('img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.jpg') type('image/jpeg'));
   background-size:cover; background-position:center center; background-repeat:no-repeat;
 }
 .hero-marca-escena::after{
@@ -409,7 +565,7 @@ fieldset{ border:none; padding:0; margin:0 0 18px 0; }
   background:radial-gradient(900px 520px at 78% 20%, rgba(169,129,46,.20), transparent 62%);
 }
 .hero-marca-grid{ position:relative; width:100%; }
-.hero-marca-texto{ max-width:560px; }
+.hero-marca-texto{ max-width:600px; }
 .hero-chip{
   display:inline-flex; align-items:center; gap:8px;
   font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600;
@@ -423,17 +579,17 @@ fieldset{ border:none; padding:0; margin:0 0 18px 0; }
   color:var(--blanco);
   font-size:clamp(2.4rem, 4vw, 3.5rem);
   line-height:1.06; letter-spacing:-.005em;
-  margin:22px 0 18px; max-width:13ch; text-wrap:balance;
+  margin:22px 0 18px; max-width:17ch; text-wrap:balance;
   text-shadow:0 2px 24px rgba(0,10,30,.45);
 }
 .hero-marca h1 .acento{ color:var(--acero-300); font-style:italic; }
 .hero-marca-lead{
   color:rgba(255,255,255,.88); font-size:1.08rem; line-height:1.65;
-  max-width:40ch; margin:0 0 12px;
+  max-width:48ch; margin:0 0 12px;
 }
 .hero-marca-firma{
   color:rgba(255,255,255,.66); font-size:.93rem; line-height:1.6;
-  max-width:46ch; margin:0 0 26px;
+  max-width:54ch; margin:0 0 26px;
 }
 .hero-marca-firma strong{ color:var(--blanco); font-weight:600; }
 .btn-oro{

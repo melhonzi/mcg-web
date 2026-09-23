@@ -57,7 +57,7 @@ P["home"] = {
     "slug": "index.html",
     "nav": "Home",
     "nav_footer": "Home",
-    "title": "Accounting Firm in Paraguay | Business Accounting & Tax Strategy",
+    "title": "Accounting Firm in Paraguay | Business Accounting & Tax",
     "description": ("Accounting firm in Asunción, Paraguay: business accounting, tax strategy before DNIT, company "
                     "formation and support for foreign investors. Led by CPA Cristina Rolón."),
     "h1": "Business accounting and tax strategy in Paraguay",
@@ -337,7 +337,7 @@ P["tributaria"] = {
     "nav": "Tax strategy",
     "nav_footer": "Tax strategy",
     "service": "Tax strategy and planning",
-    "title": "Tax Strategy in Paraguay | Tax Advisor & DNIT Risk Review — MCG",
+    "title": "Tax Strategy in Paraguay | Tax Advisor & DNIT Review",
     "description": ("Paraguay tax advisor: tax diagnostic, contingency review and action plan for companies. IRE, "
                     "IVA and IDU planning before DNIT, from an accounting firm in Asunción."),
     "h1": "Tax strategy and risk prevention in Paraguay",
@@ -515,7 +515,7 @@ P["extranjeros"] = {
     "nav": "Foreign investors",
     "nav_footer": "Foreign business owners",
     "service": "Support for foreign investors",
-    "title": "Move My Business to Paraguay | Taxes & Residency for Foreigners",
+    "title": "Move My Business to Paraguay | Taxes & Residency",
     "description": ("Move your business to Paraguay with local support: incorporation, RUC with DNIT, banking "
                     "documents, residency by investment coordination and accounting. In English."),
     "h1": "Set up and run your company in Paraguay with local support",
@@ -622,7 +622,7 @@ P["equipo"] = {
     "slug": "cristina-rolon-accountant-paraguay.html",
     "nav": "Team",
     "nav_footer": "Leadership and team",
-    "title": "Cristina Rolón, Accountant in Asunción | Director of MCG Consultora",
+    "title": "Cristina Rolón, Accountant in Asunción | MCG Consultora",
     "description": ("Cristina Rolón, CPA (National University of Asunción, 2008) and Master's in Taxation, is the "
                     "accountant in Asunción who leads MCG, with 18 years of experience."),
     "h1": "Cristina Rolón, Certified Public Accountant and director of MCG",
@@ -700,7 +700,7 @@ P["faq"] = {
     "slug": "faq-taxes-companies-paraguay.html",
     "nav": "FAQ",
     "nav_footer": "Frequently asked questions",
-    "title": "Paraguay Taxes for Foreigners: FAQ | DNIT, IRE, IVA & Residency",
+    "title": "Paraguay Taxes for Foreigners: FAQ | DNIT, IRE & Residency",
     "description": ("Paraguay taxes for foreigners: DNIT, IRE, IVA, IRP, IDU, e-invoicing, residency by investment "
                     "and company formation — 28 detailed answers from an Asunción firm."),
     "h1": "Frequently asked questions about taxes and companies in Paraguay",

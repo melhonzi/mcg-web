@@ -55,10 +55,8 @@ P["home"] = {
     "slug": "index.html",
     "nav": "Inicio",
     "nav_footer": "Inicio",
-    "title": "Estudio contable en Paraguay | Contabilidad empresarial y estrategia tributaria — MCG Consultora, Cristina Rolón",
-    "description": ("Estudio contable en Asunción, Paraguay. Contabilidad empresarial, estrategia tributaria ante la DNIT, "
-                    "constitución de sociedades y acompañamiento a extranjeros. Dirigido por Cristina Rolón, Contadora Pública "
-                    "(UNA) y Magíster en Impuestos, con 18 años de experiencia."),
+    "title": "Estudio contable en Paraguay | MCG Consultora Contable",
+    "description": ("Estudio contable en Asunción: contabilidad empresarial, estrategia tributaria ante la DNIT, sociedades y extranjeros. Dirige Cristina Rolón."),
     "h1": "Contabilidad empresarial y estrategia tributaria en Paraguay",
     "blocks": [
         {
@@ -220,10 +218,8 @@ P["contabilidad"] = {
     "nav": "Contabilidad",
     "nav_footer": "Contabilidad empresarial",
     "service": "Contabilidad empresarial",
-    "title": "Contabilidad empresarial en Paraguay | Servicio contable mensual para empresas — MCG Consultora",
-    "description": ("Servicio de contabilidad empresarial en Paraguay: registros contables, IVA e IRE ante la DNIT, "
-                    "cierres, conciliaciones e informes para la dirección. Estudio contable en Asunción dirigido por "
-                    "Cristina Rolón, Contadora Pública y Magíster en Impuestos."),
+    "title": "Contabilidad empresarial en Paraguay | MCG Consultora",
+    "description": ("Contabilidad mensual para empresas en Paraguay: registros, IVA e IRE ante la DNIT, cierres e informes para la dirección. Estudio contable en Asunción."),
     "h1": "Contabilidad empresarial en Paraguay, pensada para decidir",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Contabilidad empresarial",
@@ -333,10 +329,8 @@ P["tributaria"] = {
     "nav": "Estrategia tributaria",
     "nav_footer": "Estrategia tributaria",
     "service": "Estrategia y planificación tributaria",
-    "title": "Estrategia tributaria en Paraguay | Diagnóstico y prevención de riesgos ante la DNIT — MCG Consultora",
-    "description": ("Diagnóstico tributario, identificación de contingencias y plan de acción para empresas en Paraguay. "
-                    "Planificación de IRE, IVA e IDU ante la DNIT con criterio preventivo. Estudio contable en Asunción "
-                    "dirigido por Cristina Rolón, Magíster en Impuestos."),
+    "title": "Estrategia tributaria en Paraguay ante la DNIT | MCG",
+    "description": ("Diagnóstico tributario, contingencias y plan de acción para empresas en Paraguay. Planificación de IRE, IVA e IDU ante la DNIT, con criterio preventivo."),
     "h1": "Estrategia tributaria y prevención de riesgos en Paraguay",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Estrategia tributaria",
@@ -419,10 +413,8 @@ P["sociedades"] = {
     "nav": "Sociedades",
     "nav_footer": "Constitución de sociedades",
     "service": "Constitución de sociedades",
-    "title": "Constitución de sociedades en Paraguay | EAS, SRL y SA paso a paso — MCG Consultora Contable",
-    "description": ("Constitución de empresas en Paraguay: elección entre EAS, SRL y SA, proceso societario, alta de RUC "
-                    "ante la DNIT y puesta en marcha contable. Acompañamiento de MCG Consultora Contable y Tributaria "
-                    "en Asunción."),
+    "title": "Constituir una empresa en Paraguay: EAS, SRL o SA | MCG",
+    "description": ("Constituir una empresa en Paraguay: elegir entre EAS, SRL o SA, proceso societario, alta de RUC ante la DNIT y puesta en marcha contable. En Asunción."),
     "h1": "Constitución de sociedades en Paraguay: EAS, SRL o SA",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Constitución de sociedades",
@@ -509,10 +501,8 @@ P["extranjeros"] = {
     "nav": "Extranjeros",
     "nav_footer": "Empresarios extranjeros",
     "service": "Acompañamiento a inversionistas extranjeros",
-    "title": "Instalar tu empresa en Paraguay siendo extranjero | Inversión, residencia y contabilidad — MCG Consultora",
-    "description": ("Acompañamiento local para extranjeros que quieren invertir o instalar su empresa en Paraguay: "
-                    "constitución de sociedad, RUC ante la DNIT, documentación bancaria, coordinación migratoria y "
-                    "contabilidad. Atención en español, inglés y portugués."),
+    "title": "Instalar tu empresa en Paraguay siendo extranjero | MCG",
+    "description": ("Acompañamiento local para extranjeros que instalan su empresa en Paraguay: sociedad, RUC, banco, migraciones y contabilidad. En tres idiomas."),
     "h1": "Instalá y operá tu empresa en Paraguay con acompañamiento local",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Empresarios e inversionistas extranjeros",
@@ -614,10 +604,8 @@ P["equipo"] = {
     "slug": "direccion-equipo.html",
     "nav": "Equipo",
     "nav_footer": "Dirección y equipo",
-    "title": "Cristina Rolón, Contadora Pública en Paraguay | Directora de MCG Consultora Contable y Tributaria",
-    "description": ("Cristina Rolón, Contadora Pública egresada de la Universidad Nacional de Asunción (2008) y Magíster "
-                    "en Impuestos, dirige MCG Consultora Contable y Tributaria en Asunción, Paraguay, con 18 años de "
-                    "experiencia y un equipo estable."),
+    "title": "Cristina Rolón, Contadora Pública en Asunción | MCG",
+    "description": ("Cristina Rolón, Contadora Pública (UNA, 2008) y Magíster en Impuestos, dirige MCG Consultora en Asunción, Paraguay, con 18 años de experiencia."),
     "h1": "Cristina Rolón, Contadora Pública y directora de MCG",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Dirección y equipo",
@@ -693,10 +681,8 @@ P["faq"] = {
     "slug": "preguntas-frecuentes.html",
     "nav": "Preguntas frecuentes",
     "nav_footer": "Preguntas frecuentes",
-    "title": "Preguntas frecuentes sobre impuestos y empresas en Paraguay | DNIT, IRE, IVA y residencia — MCG Consultora",
-    "description": ("DNIT, IRE, IVA, IRP, IDU, facturación electrónica, residencia por inversión, cédula paraguaya, "
-                    "migración de empresa y constitución de sociedades: 28 respuestas detalladas de MCG Consultora "
-                    "Contable y Tributaria, estudio contable en Asunción, Paraguay."),
+    "title": "Preguntas frecuentes: impuestos y empresas en Paraguay",
+    "description": ("DNIT, IRE, IVA, IRP, IDU, facturación electrónica, residencia por inversión y constitución de sociedades: 28 respuestas de un estudio de Asunción."),
     "h1": "Preguntas frecuentes sobre impuestos y empresas en Paraguay",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Preguntas frecuentes",
@@ -801,9 +787,8 @@ P["contacto"] = {
     "slug": "contacto.html",
     "nav": "Contacto",
     "nav_footer": "Contacto",
-    "title": "Contacto | Estudio contable en Asunción, Paraguay — MCG Consultora Contable y Tributaria",
-    "description": ("Contactá a MCG Consultora Contable y Tributaria en Asunción, Paraguay. Contanos sobre tu empresa o "
-                    "tu proyecto de inversión y coordinamos los siguientes pasos. Atención en español, inglés y portugués."),
+    "title": "Contacto | Estudio contable en Asunción, Paraguay — MCG",
+    "description": ("Contactá a MCG Consultora en Asunción, Paraguay. Contanos sobre tu empresa o tu proyecto de inversión y coordinamos los siguientes pasos."),
     "h1": "Hablemos de tu empresa",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Contacto",
@@ -871,10 +856,8 @@ P["erp"] = {
     "nav": "ERP",
     "nav_footer": "Implementación de ERP",
     "service": "Implementación de ERP — módulo contable",
-    "title": "Implementación de ERP contable en Paraguay | Módulo contable, costos y trazabilidad — MCG Consultora",
-    "description": ("Implementación y puesta a punto del módulo contable de un ERP en Paraguay: plan de cuentas, "
-                    "integración con tesorería, logística, producción, compras y bancos, costeo, rentabilidad y "
-                    "trazabilidad auditable. Más de 30 empresas implementadas por Cristina Rolón."),
+    "title": "Implementación de ERP contable en Paraguay | MCG",
+    "description": ("Implementación del módulo contable de un ERP en Paraguay: plan de cuentas, integración con tesorería, compras y bancos, costeo y trazabilidad."),
     "h1": "Implementación de ERP: el módulo contable como corazón del sistema",
     "blocks": [
         {"type": "hero_simple", "eyebrow": "Implementación de ERP",

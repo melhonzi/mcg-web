@@ -633,7 +633,20 @@ def render_page(lang, page_key, data, alldata, wrap=True):
         for x in schemas
     )
 
-    preload = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % asset(IMG["escena"], lang)) if page_key == "home" else ""
+    # La foto del hero se pide de entrada y con prioridad alta: es lo más
+    # grande que se ve al abrir y de ella depende la sensación de "ya cargó".
+    # Se pide la versión WebP (la mitad de peso) con su type: el navegador que
+    # no la entiende simplemente ignora esta línea y baja el JPG al leer el CSS.
+    preload = ('<link rel="preload" as="image" type="image/webp" href="%s" fetchpriority="high">'
+               % asset(IMG["escena_webp"], lang)) if page_key == "home" else ""
+    # Las dos tipografías que se ven apenas abre la página. Se piden de entrada
+    # para que el texto no aparezca primero con la letra de reserva y salte.
+    preload += (
+        '<link rel="preload" as="font" type="font/woff2" crossorigin href="%s">'
+        '<link rel="preload" as="font" type="font/woff2" crossorigin href="%s">'
+        % (asset("fonts/inter-latin.woff2", lang),
+           asset("fonts/cormorant-garamond-latin.woff2", lang))
+    )
     og_img = DOMAIN + "/" + (IMG["escena"] if page_key == "home" else
                              IMG["retrato"] if page_key == "equipo" else IMG["logo_cuadrado"])
 
@@ -654,9 +667,9 @@ def render_page(lang, page_key, data, alldata, wrap=True):
         '<link rel="apple-touch-icon" href="%s">'
         '<meta name="theme-color" content="#001D45">'
         '%s'
-        '<link rel="preconnect" href="https://fonts.googleapis.com">'
-        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-        '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap">'
+        # Las tipografías ya no se piden a Google: viven en fonts/ y se declaran
+        # dentro de styles.css. Aquel <link> a fonts.googleapis.com frenaba el
+        # dibujado de la página hasta que respondía un servidor de terceros.
         '<link rel="stylesheet" href="%s">'
         "%s"
         '<script>window.MCG_LANG="%s";window.MCG_ALT=%s;window.MCG_WA_SALUDO=%s;window.MCG_TEXTOS=%s;</script>'
@@ -710,8 +723,13 @@ def build():
         os.makedirs(outdir, exist_ok=True)
         for key in PAGE_ORDER:
             page = data["pages"][key]
-            wrap = not (lang == "es" and key == "home")
-            html_out = render_page(lang, key, data, alldata, wrap=wrap)
+            # TODAS las páginas se escriben como documento completo. La portada
+            # en español era la única excepción: salía sin <!doctype>, sin
+            # <html lang>, sin <meta charset> y sin <meta viewport>. Es un resto
+            # de cuando el hosting viejo le ponía la cabecera por fuera. En un
+            # hosting estático nadie se la pone, así que el navegador la abría
+            # en modo antiguo y el celular la armaba a 999 px de ancho.
+            html_out = render_page(lang, key, data, alldata, wrap=True)
             path = os.path.join(outdir, page["slug"])
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(html_out)

@@ -33,9 +33,14 @@ CONFIG = {
         "googleReviewsUrl": "https://maps.app.goo.gl/AhZBTNs8369onMqa8",
         "waMensajeFlotante": "Hola MCG, vengo de la página web y quiero hacer una consulta",
     },
+    # El sitio se sirve en www (es lo que dice el archivo CNAME, y GitHub
+    # Pages manda el dominio sin www a www con una redirección). Por eso el
+    # canónico, los hreflang, el og:url, el og:image y el sitemap tienen que
+    # decir www: si dicen otra cosa, cada dirección que Google visita rebota
+    # en una redirección antes de llegar.
     "dominio": {
-        "preferido": "mcgconsultora.com.py",
-        "urlCanonicaBase": "https://mcgconsultora.com.py",
+        "preferido": "www.mcgconsultora.com.py",
+        "urlCanonicaBase": "https://www.mcgconsultora.com.py",
     },
 }
 
@@ -43,6 +48,9 @@ DOMAIN = CONFIG["dominio"]["urlCanonicaBase"]
 
 IMG = {
     "escena": "img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.jpg",
+    # Misma foto en WebP: pesa la mitad. El JPG se queda porque es el que viaja
+    # en og:image (WhatsApp y Facebook no muestran WebP de forma confiable).
+    "escena_webp": "img/mcg-consultora-contable-oficina-cristina-rolon-asuncion-paraguay.webp",
     "hero": "img/cristina-rolon-contadora-mcg-consultora-contable-tributaria.png",
     "retrato": "img/cristina-rolon-contadora-publica-directora-mcg-asuncion-paraguay.jpg",
     "equipo": "img/equipo-mcg-consultora-contable-tributaria-asuncion-paraguay.jpg",
