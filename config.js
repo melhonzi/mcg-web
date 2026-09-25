@@ -23,6 +23,9 @@ window.MCG_CONFIG = {
     "googleReviewsUrl": "https://maps.app.goo.gl/AhZBTNs8369onMqa8",
     "waMensajeFlotante": "Hola MCG, vengo de la página web y quiero hacer una consulta"
   },
+  "formulario": {
+    "endpoint": ""
+  },
   "dominio": {
     "preferido": "www.mcgconsultora.com.py",
     "urlCanonicaBase": "https://www.mcgconsultora.com.py"

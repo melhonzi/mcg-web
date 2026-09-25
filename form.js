@@ -80,8 +80,18 @@
       mensajeBox.setAttribute("role", "status");
     }
 
-    /* Camino 1: si el hosting tiene PHP, el envío llega por correo.
-       Camino 2: si no responde, se abre WhatsApp con el mensaje armado. */
+    /* Dirección del ayudante que recibe la consulta y manda el correo.
+       Sale de config.js (build/site_config.py), nunca escrita acá: el día
+       que cambie se toca en un solo lugar. Vacía = todavía no hay ayudante
+       publicado, así que ni se intenta y se va derecho a WhatsApp. */
+    function endpoint() {
+      var c = window.MCG_CONFIG && window.MCG_CONFIG.formulario;
+      return (c && c.endpoint) || "";
+    }
+
+    /* Camino 1: el ayudante recibe la consulta, la guarda y manda el correo.
+       Camino 2: si no contesta, se abre WhatsApp con el mensaje armado.
+       Nunca mostramos un "enviado con éxito" que no pasó. */
     function caminoWhatsapp(textoPrevio) {
       var mensaje = armarMensaje();
       var link = window.MCG_WHATSAPP_LINK ? window.MCG_WHATSAPP_LINK(mensaje) : "#";
@@ -120,6 +130,13 @@
       var boton = form.querySelector('button[type="submit"]');
       if (boton) boton.disabled = true;
 
+      var destino = endpoint();
+      if (!destino) {
+        if (boton) boton.disabled = false;
+        caminoWhatsapp();
+        return;
+      }
+
       var listo = false;
       var corte = setTimeout(function () {
         if (!listo) {
@@ -127,9 +144,12 @@
           if (boton) boton.disabled = false;
           caminoWhatsapp();
         }
-      }, 6000);
+      }, 10000);
 
-      fetch("enviar.php", { method: "POST", body: datos })
+      /* Se manda como FormData a propósito. Con JSON el navegador pregunta
+         primero "¿me dejás?" (una llamada OPTIONS) y el ayudante de Google
+         no sabe contestar esa pregunta, así que el envío fallaría siempre. */
+      fetch(destino, { method: "POST", body: datos })
         .then(function (r) {
           return r.ok ? r.json() : Promise.reject(r.status);
         })

@@ -33,6 +33,14 @@ CONFIG = {
         "googleReviewsUrl": "https://maps.app.goo.gl/AhZBTNs8369onMqa8",
         "waMensajeFlotante": "Hola MCG, vengo de la página web y quiero hacer una consulta",
     },
+    # Dirección del ayudante de Google que recibe el formulario y manda el
+    # correo, la planilla y el aviso por WhatsApp (ver build/FORMULARIO.md).
+    # MIENTRAS ESTÉ VACÍA el formulario no intenta mandar nada y va directo
+    # al camino de WhatsApp, que es lo que hace hoy: así el sitio nunca
+    # queda a medias esperando una dirección que todavía no existe.
+    "formulario": {
+        "endpoint": "",
+    },
     # El sitio se sirve en www (es lo que dice el archivo CNAME, y GitHub
     # Pages manda el dominio sin www a www con una redirección). Por eso el
     # canónico, los hreflang, el og:url, el og:image y el sitemap tienen que
